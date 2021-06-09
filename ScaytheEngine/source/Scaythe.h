@@ -6,6 +6,6 @@
 
 #include "Core/Base.h"
 
-#include "Core/Logging.h"
+#include "Core/Log.h"
 
 #endif
