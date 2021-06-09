@@ -1,9 +1,13 @@
 workspace "Scaythe"
+    architecture "x64"
+
     configurations {
         "Debug",
         "Release",
         "Dist"
     }
+
+    startproject "ScaytheEditor"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
@@ -18,8 +22,8 @@ project "ScaytheEngine"
 
     files 
     {
-        "source/**.h",
-        "source/**.c"
+        "%{prj.name}/source/**.h",
+        "%{prj.name}/source/**.cpp"
     }
 
     postbuildcommands
@@ -39,9 +43,23 @@ project "ScaytheEngine"
         defines { "NDEBUG" }
         optimize "On"
 
+    filter "system:windows"
+        defines
+        {
+            "SCAYTHE_LIB",
+            "SCAYTHE_SYS_WIN"
+        }
+
+    filter "system:not windows"
+        defines
+        {
+            "SCAYTHE_LIB",
+            "SCAYTHE_SYS_UNIX"
+        }
+
 project "ScaytheEditor"
     location "ScaytheEditor"
-    kind "SharedLib"
+    kind "ConsoleApp"
     language "C++"
     cppdialect "C++17"
 
@@ -50,8 +68,8 @@ project "ScaytheEditor"
 
     files 
     {
-        "source/**.h",
-        "source/**.c"
+        "%{prj.name}/source/**.h",
+        "%{prj.name}/source/**.cpp"
     }
 
     includedirs
@@ -75,3 +93,15 @@ project "ScaytheEditor"
     filter "configurations:Dist"
         defines { "NDEBUG" }
         optimize "On"
+
+    filter "system:windows"
+        defines
+        {
+            "SCAYTHE_SYS_WIN"
+        }
+
+    filter "system:not windows"
+        defines
+        {
+            "SCAYTHE_SYS_UNIX"
+        }
