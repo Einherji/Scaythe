@@ -1,4 +1,7 @@
+include("conanbuildinfo.premake.lua")
+
 workspace "Scaythe"
+    conan_basic_setup()
     architecture "x64"
 
     configurations {
