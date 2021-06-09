@@ -4,6 +4,8 @@
 #ifndef SCAYTHE_CORE_BASE
 #define SCAYTHE_CORE_BASE
 
+#include <memory>
+
 #ifdef SCAYTHE_SYS_WIN
     #ifdef SCAYTHE_LIB
         #define SCAYHTE_API __declspec(dllexport)
@@ -19,4 +21,10 @@
 #endif
 
 #endif
+
+namespace Scaythe {
+    template <typename T>
+    using Ref = std::shared_ptr<T>;
+}
+
 
