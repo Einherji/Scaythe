@@ -2,3 +2,8 @@ Makefile
 .idea
 bin
 bin-int
+/conaninfo.txt
+/graph_info.json
+/conanbuildinfo.txt
+/conanbuildinfo.premake.lua
+/conan.lock

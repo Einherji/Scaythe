@@ -1,0 +1,6 @@
+[requires]
+spdlog/1.8.5
+glfw/3.3.4
+
+[generators]
+premake
