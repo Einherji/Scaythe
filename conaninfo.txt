@@ -1,10 +1,10 @@
 [settings]
     arch=x86_64
     build_type=Release
-    compiler=gcc
-    compiler.libcxx=libstdc++11
-    compiler.version=9
-    os=Linux
+    compiler=Visual Studio
+    compiler.runtime=MD
+    compiler.version=16
+    os=Windows
 
 [requires]
     glad/0.1.34
@@ -18,27 +18,24 @@
     arch=x86_64
     arch_build=x86_64
     build_type=Release
-    compiler=gcc
-    compiler.libcxx=libstdc++11
-    compiler.version=9
-    os=Linux
-    os_build=Linux
+    compiler=Visual Studio
+    compiler.runtime=MD
+    compiler.version=16
+    os=Windows
+    os_build=Windows
 
 [full_requires]
-    fmt/7.1.3:b911f48570f9bb2902d9e83b2b9ebf9d376c8c56
-    glad/0.1.34:18346ee21bbc8282fbdd084747fe37b49b6f1517
-    glfw/3.3.4:6340505dafa41af473a127b95b9c69164d638b69
+    fmt/7.1.3:3fb49604f9c2f729b85ba3115852006824e72cab
+    glad/0.1.34:473c24ae8996a862e6a24597d141497cb708b730
+    glfw/3.3.4:d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc
     opengl/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
-    spdlog/1.8.5:a8b001c04e44ed5cb4208ab0f8bf279c6689b496
-    xorg/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    spdlog/1.8.5:5f068d3b65ebc5bb906d7ad2d998a4a2f8ad5db4
 
 [full_options]
-    fmt:fPIC=True
     fmt:header_only=False
     fmt:shared=False
     fmt:with_fmt_alias=False
     glad:extensions=''
-    glad:fPIC=True
     glad:gl_profile=compatibility
     glad:gl_version=3.3
     glad:gles1_version=None
@@ -47,10 +44,8 @@
     glad:no_loader=False
     glad:shared=False
     glad:spec=gl
-    glfw:fPIC=True
     glfw:shared=False
     glfw:vulkan_static=False
-    spdlog:fPIC=True
     spdlog:header_only=False
     spdlog:no_exceptions=False
     spdlog:shared=False

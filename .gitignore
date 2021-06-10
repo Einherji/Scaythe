@@ -6,3 +6,7 @@ bin-int
 /conanbuildinfo.txt
 /conanbuildinfo.premake.lua
 /conan.lock
+conaninfo.txt
+.vs/
+**.sln
+**.vcxproj**
