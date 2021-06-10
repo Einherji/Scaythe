@@ -1,6 +1,7 @@
 [requires]
 spdlog/1.8.5
 glfw/3.3.4
+glad/0.1.34
 
 [generators]
 premake

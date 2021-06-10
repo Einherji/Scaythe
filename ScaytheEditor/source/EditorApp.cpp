@@ -10,6 +10,7 @@ namespace Scaythe {
         EditorApplication() : Application("EDITOR")
         {
             S_TRACE("Editor application initialized");
+            // somehow hook in with imgui and
         }
         ~EditorApplication()
         {
