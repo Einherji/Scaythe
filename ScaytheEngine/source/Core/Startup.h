@@ -7,10 +7,10 @@
 
 #include "Application.h"
 
-extern Scaythe::Application* application;
 
 int main(int argc, char** argv)
 {
+    // external function defined on client application
     auto app = Scaythe::CreateApplication();
     app->Run();
     delete app;
