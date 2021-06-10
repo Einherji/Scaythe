@@ -15,7 +15,7 @@
 namespace Scaythe {
     class Log {
     public:
-        static void Init();
+        static void Init(const char* clientName);
 
         static Ref<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
         static Ref<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
