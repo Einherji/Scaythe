@@ -8,23 +8,23 @@
 
 #ifdef SCAYTHE_SYS_WIN
     #ifdef SCAYTHE_LIB
-        #define SCAYHTE_API __declspec(dllexport)
+        #define SCAYTHE_API __declspec(dllexport)
     #else
         #define SCAYTHE_API __declspec(dllimport)
     #endif
 #else
     #ifdef SCAYTHE_LIB
-        #define SCAYHTE_API __attribute__((visibility("default")))
+        #define SCAYTE_API __attribute__((visibility("default")))
     #else
         #define SCAYTHE_API
     #endif
 #endif
 
-#endif
+
 
 namespace Scaythe {
     template <typename T>
     using Ref = std::shared_ptr<T>;
 }
 
-
+#endif

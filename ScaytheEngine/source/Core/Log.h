@@ -13,7 +13,7 @@
 #pragma warning(pop)
 
 namespace Scaythe {
-    class Log {
+    class SCAYTHE_API Log {
     public:
         static void Init(const char* clientName);
 

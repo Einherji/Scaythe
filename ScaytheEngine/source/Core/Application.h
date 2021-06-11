@@ -5,6 +5,8 @@
 #ifndef SCAYTHE_APPLICATION_H
 #define SCAYTHE_APPLICATION_H
 
+#include "Base.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,7 +17,8 @@
 #include "Log.h"
 
 namespace Scaythe {
-    class Application {
+    class SCAYTHE_API Application 
+    {
     public:
         Application(const char* name);
         ~Application();
