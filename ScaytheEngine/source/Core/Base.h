@@ -14,7 +14,7 @@
     #endif
 #else
     #ifdef SCAYTHE_LIB
-        #define SCAYTE_API __attribute__((visibility("default")))
+        #define SCAYTHE_API __attribute__((visibility("default")))
     #else
         #define SCAYTHE_API
     #endif

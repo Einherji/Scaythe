@@ -74,7 +74,7 @@ namespace Scaythe {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
-        window = glfwCreateWindow(640, 480, this->appName, NULL, NULL);
+        window = glfwCreateWindow(1920, 1080, this->appName, NULL, NULL);
         if (!window) {
             S_CORE_CRITICAL("Could not create the application window");
             glfwTerminate();

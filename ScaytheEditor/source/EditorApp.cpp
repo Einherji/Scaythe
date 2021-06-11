@@ -10,7 +10,7 @@ namespace Scaythe {
         EditorApplication() : Application("EDITOR")
         {
             S_TRACE("Editor application initialized");
-            // somehow hook in with imgui and
+            // somehow hook in with imgui and create the interface (extend Layer class)
         }
         ~EditorApplication()
         {

@@ -1,5 +1,6 @@
 //
-// Created by matthiaso on 6/10/21.
+// Added by matthiaso on 6/10/21.
+// This was needed for 3d calculations
 //
 #ifndef LINMATH_H
 #define LINMATH_H
